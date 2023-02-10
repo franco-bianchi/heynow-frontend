@@ -23,5 +23,4 @@ export const messagesSlice = createSlice({
     }
 });
 
-// Action creators are generated for each case reducer function
 export const { addAnswer, addIntent, onReset } = messagesSlice.actions;

@@ -1,12 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import control from "../../assets/control.png";
-// import Chart_fill from "./assets/Chart_fill.png";
-// import Chat from "./assets/Chat.png";
-// import User from "./assets/User.png";
-// import Calendar from "./assets/Calendar.png";
-// import Search from "./assets/Search.png";
-// import Analytics from "./assets/Chart.png";
-// import Files from "./assets/Folder.png";
 import Setting from "../../assets/Setting.png";
 import Logo from "../../assets/logo.png";
 import { useAuthStore } from "../../hooks/useAuthStore";
@@ -23,14 +16,6 @@ const App = () => {
     startLogout();
   };
   const Menus = [
-    // { title: "Dashboard", src: "Chart_fill", img: Chart_fill },
-    // { title: "Inbox", src: "Chat", img: Chat },
-    // { title: "Accounts", src: "User", gap: true, img: User },
-    // { title: "Schedule ", src: "Calendar", img: Calendar },
-    // { title: "Search", src: "Search", img: Search },
-    // { title: "Analytics", src: "Chart", img: Analytics },
-    // { title: "Files ", src: "Folder", gap: true, img: Files },
-    // { title: "Setting", src: "Setting", img: Setting },
     {
       title: "Sign Out",
       src: "Setting",
@@ -73,7 +58,7 @@ const App = () => {
               !open && "scale-0"
             }`}
           >
-            Designer
+            Bot Project
           </h1>
         </div>
         <ul className="pt-6">
@@ -122,22 +107,6 @@ const App = () => {
                         </>
                       );
                     })}
-
-                    {/* {messages.map((message) => {
-                      return message % 2 === 0 ? (
-                        <li className="flex justify-start" key={message}>
-                          <div className="relative max-w-xl px-4 py-2 text-gray-700 rounded shadow">
-                            <span className="block">Hi</span>
-                          </div>
-                        </li>
-                      ) : (
-                        <li className="flex justify-end" key={message}>
-                          <div className="relative max-w-xl px-4 py-2 text-gray-700 bg-gray-100 rounded shadow">
-                            <span className="block">Hiiii</span>
-                          </div>
-                        </li>
-                      );
-                    })} */}
                   </ul>
                 </div>
                 <form

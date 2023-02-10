@@ -4,7 +4,6 @@ const api = axios.create({
     baseURL: process.env.REACT_APP_API
 });
 
-// Todo: configurar interceptores
 api.interceptors.request.use( config => {
     config.headers = {
         ...config.headers,
